@@ -37,8 +37,15 @@
   @media (min-width: 750px) {
     .topspace {margin-top: 25%;}
   }
-    body {background: #FFAD33;}
-  .circle {background: #ffcc00;
+  html {height: 100%;}
+    body {  
+    background: orange; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(DarkOrange, gold); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(DarkOrange, gold); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(DarkOrange, gold); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(DarkOrange, gold); /* Standard syntax */
+  }
+  .circle {background: yellow;
     border-radius: 50%;
     width: 170px;
     height: 170px;
