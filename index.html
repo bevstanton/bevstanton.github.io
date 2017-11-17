@@ -34,10 +34,18 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 <style>
-  @media only screen and (min-width: 961px) {
+  /* @media only screen and (min-width: 961px) {
     .topspace {margin-top: 25%;}
   }
-    
+    */
+  #child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
+}
   html {height: 100%;}
   body {  
     background: orange; /* For browsers that do not support gradients */
@@ -77,7 +85,7 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    
+    <div id="child">
     <div class="row">
      <div class="twelve columns topspace" style="text-align: center;" >
     <h1 class="bstype">Beverley Stanton</h1>
@@ -107,7 +115,7 @@
       
     </div>
      
-    
+    </div> 
   </div>
 
 <!-- End Document
