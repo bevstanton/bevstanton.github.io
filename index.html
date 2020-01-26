@@ -85,6 +85,23 @@
   },
   "email": "bev@bevstanton.com"
 }
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fade-in {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 2;
+    -moz-animation:fadeIn ease-in 2;
+    animation:fadeIn ease-in 2;
+
+    -webkit-animation-fill-mode:forwards; 
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    animation-duration:2s;
+}
 </script>
 </head>
 <body>
@@ -103,7 +120,7 @@
       <div class="one-third column" style="text-align: center;">
         <a href="http://www.thisweekinsurveillance.com" target="_blank">
         <div class="circle animated rotateIn" style="animation-delay: 1s;"><img src="images/if_cat_eyes_182520.png" /></div></a>
-     <a class="button" href="http://www.thisweekinsurveillance.com" target="_blank">Cats</a></div>
+     <a class="button fade-in" href="http://www.thisweekinsurveillance.com" target="_blank">Cats</a></div>
       
       
       <div class="one-third column" style="text-align: center;">
